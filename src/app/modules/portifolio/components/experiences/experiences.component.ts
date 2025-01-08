@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+
 import { IExperiences } from '../../interfaces/IExperiences.interface';
 
 @Component({
@@ -41,7 +42,7 @@ export class ExperiencesComponent {
       <p>Solução: Usei Jetpack Compose (Kotlin) para criar uma interface intuitiva e implementei
       a sincronização de dados com a API (arquitetura limpa).
       A integração de assinatura digital foi realizada com uma biblioteca de terceiros,
-      garantindo a confirmação de pedidos enquanto o sistema estava offline e realizando a
+      garantindo a confirmação, salvando temporariamente no dispositivo enquanto o sistema estava offline, e realizando a
       sincronização quando a internet estava disponível.</p>
       `,
     },
@@ -52,11 +53,11 @@ export class ExperiencesComponent {
       },
       text: `
       <p><strong>Resumo:</strong></p>
-        <p>Contratado pela Gempe para atuar como desenvolvedor alocado em um cliente,
-        trabalhei no desenvolvimento e manutenção de APIs em Java (Spring Framework) e AngularJS,
-        além de um sistema back-office utilizando PHP, Docker, Node.js e SQS. Durante o projeto, contribui com integrações,
-        geração de relatórios e alterações no sistema de atendimento, além de auxiliar na implantação do código em
-        ambientes de homologação.</p>
+        <p>Atuei no desenvolvimento e manutenção de APIs em Java (Spring Framework) e AngularJS,
+        além de contribuir com integrações, geração de relatórios e melhorias no sistema de atendimento.
+        Também auxiliei na implantação de código em ambientes de homologação.
+        Posteriormente, trabalhei em um sistema back-office utilizando PHP, Docker, Node.jse SQS.
+      </p>
 
         <p><strong>Tecnologias e Ferramentas:</p></strong>
 
@@ -67,16 +68,15 @@ export class ExperiencesComponent {
         <p>Metodologias: Scrum e reuniões diárias com múltiplas equipes.</p>
 
         <p><strong>Desafios e Soluções:</p></strong>
-        <p>No início, a atuação envolveu o estudo de um grande sistema de condomínio em Java 11,
-        com arquitetura customizada e sem uso do Spring, para compreender integrações essenciais para o sistema de atendimento.
-        Posteriormente, foquei no sistema de atendimento, realizando alterações no AngularJS,
-        adicionando funcionalidades no back-end com Spring e ajustando relatórios SQL sob demanda,
-        atendendo às necessidades do cliente.</p>
+        <p>No início, estudei um complexo sistema de condomínio em Java 11 com arquitetura customizada,
+        sem uso do Spring, para entender integrações cruciais para o sistema de atendimento.
+        Posteriormente, concentrei-me no sistema de atendimento, realizando melhorias em AngularJS,
+        adicionando funcionalidades no back-end com Spring e ajustando relatórios SQL sob demanda.</p>
 
-        <p>Um dos maiores desafios foi lidar com a complexidade das integrações e a necessidade de validar logins
-        por meio do sistema principal, antes de acessar o sistema de atendimento.
-        Além disso, no período final do contrato, fui realocado para um sistema back-office,
-        onde atuei na manutenção e melhorias em PHP, Docker e Node.js.</p>
+        <p>Enfrentei desafios significativos, como lidar com a complexidade das integrações
+        e a validação de logins através do sistema principal antes de acessar o sistema de atendimento.
+        No final do contrato, fui realocado para um sistema back-office, onde trabalhei na manutenção e
+        melhorias usando PHP, Docker e Node.js.</p>
       `,
     },
     {
@@ -88,9 +88,8 @@ export class ExperiencesComponent {
       <p><strong>Resumo:</strong></p>
 
       <p>
-        Atuei no desenvolvimento e manutenção de um ERP com múltiplos módulos,
-        abrangendo áreas como Comercial (pedidos, notas fiscais), Produção, Transporte (CT-e, MDF-e) e Financeiro (contas a pagar e receber) entre outros.
-        A maior parte do trabalho consistia em resolver problemas identificados pelos clientes ou pela gerência, além de implementar novas funcionalidades dentro do ERP.
+        Atuei no desenvolvimento e manutenção de um ERP modular abrangendo Comercial, Produção, Transporte e Financeiro.
+        Resolvia problemas identificados por clientes e gerência, além de implementar novas funcionalidades.
         Trabalhei em equipe utilizando metodologias ágeis (Scrum), com participação ativa em sprints e revisão de código.
       </p>
        <p><strong>Tecnologias e Ferramentas:</strong></p>
@@ -101,13 +100,20 @@ export class ExperiencesComponent {
         <p>Controle de Versão: SVN (Tortoise).</p>
         <p>Metodologias: Scrum.</p>
        <p><strong>Desafios e Soluções:</strong></p>
-       <p>Um dos projetos mais desafiadores foi a implementação de uma nova funcionalidade para gerenciar planos contábeis e gerenciais dentro do ERP. O objetivo era permitir que contas, como parcelas a pagar ou a receber, fossem associadas a múltiplos planos contábeis e, dentro deles, rateadas novamente em planos gerenciais, obedecendo diversas regras de negócio.</p>
-       <p>A complexidade residia em:</p>
-        <ul>
-          <li><p>Criar uma interface genérica e uma tela modular capaz de atender a diferentes módulos (pedidos, notas fiscais, contas a pagar/receber) com uma única implementação.</p></li>
-        </ul>
-       <p>O projeto exigiu análise detalhada dos diferentes pontos do ERP para integração, cálculos de rateio precisos e extensiva validação para assegurar a conformidade das regras. A solução foi desenvolvida com uma arquitetura baseada em interfaces, possibilitando modularidade e reuso de código.</p>
+        <p>Um dos projetos mais desafiadores foi a implementação de uma funcionalidade de gerenciamento de planos contábeis e gerenciais no ERP.
+        O objetivo era permitir que contas fossem associadas a múltiplos planos contábeis e rateadas em planos gerenciais, obedecendo a várias regras de negócio.</p>
 
+        <ul>
+        <p>A complexidade incluía:</p>
+
+          <li><p>Design de Interface: Desenvolver uma interface de usuário modular e reutilizável capaz de suportar diferentes módulos do ERP (pedidos, notas fiscais, contas a pagar/receber).</p></li>
+
+          <li><p>Arquitetura Baseada em Interfaces: Implementação de uma arquitetura extensível e modular, permitindo a reutilização de componentes e facilitando a manutenção e extensão do código.</p></li>
+
+          <li><p>Validação e Cálculos de Rateio: Realizar cálculos de rateio precisos e aplicar validações complexas para garantir a conformidade das regras de negócio.</p></li>
+
+          <li><p>Análise de Integração: Análise detalhada dos pontos de integração no ERP para assegurar que a nova funcionalidade fosse perfeitamente integrada aos módulos existentes.</p></li>
+        </ul>
       `,
     },
   ]);
